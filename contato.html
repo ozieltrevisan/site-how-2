@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>inteligencia artificial</title>
+   
+    <link rel="stylesheet" type="text/css" href="estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="form.css"/>
+    <style>
+      body{
+        background-image: url(fundo.jpg);
+      }
+    </style>
+     <script>
+      function mudafoto (foto)
+      {
+        document.getElementById ("icone").src = foto;
+  
+      }
+  
+    </script>
+ 
+ <h1 id="principal">OT Soluções em TI</h1>
+ 
+ <nav id="menu">
+  <h1>menu principal </h1>
+   <ul>   
+     <li onmouseover="mudafoto('glass-oculos-preto-peq.png')" onmouseout= "mudafoto('topo contato.png')"><a href="index.html">Home</a></li>
+     <li onmouseover="mudafoto('topo-manutenção.png')" onmouseout= "mudafoto('topo contato.png')"><a href="manutencao.html">Manutenção</a></li>
+     <li onmouseover="mudafoto('topo programa.png')" onmouseout= "mudafoto('topo contato.png')"><a href="programas.html">Programas</a></li> 
+     <li onmouseover="mudafoto('topo site.png')" onmouseout= "mudafoto('topo contato.png')"><a href="sites.html">Sites</a></li>
+     <li onmouseover="mudafoto('topo contato.png')" onmouseout= "mudafoto('topo contato.png')"><a href="contato.html">Contato</a></li>
+    </ul>
+
+</nav>
+
+<figure>
+  <figcaption id="imagemtopo">
+<img id="icone" src="topo contato.png" width="200"/>
+</figcaption>
+</figure>
+<figure>
+<figcaption id="foto fundo">
+  
+</figcaption>
+
+</figure>
+
+    </head>
+  
+
+<body >
+  <div>
+<form method="POST" id="fContato" action="mailto: oziel.trevisan@gmail.com">
+  <fieldset id="usuario"><legend>indetificacao</legend>]//////]
+    
+      <p><label for="cnome">Nome:</label>
+      <input type="text" name="tnome" id="cnome" size="20" maxlength="30" placeholder="Nome completo"></p>
+      <p><label for="csenha">Senha:</label>
+      <input type="password" name="tsenha" id="csenha" size="8" maxlength="8" placeholder="Senha"></p>
+      <p><label for="cMail">E-Mail:</label> 
+      <input type="email" name="tMail" id="cMail" size="20" maxlength="40"></p>
+      <fieldset id="sexo"><legend>sexo</legend>
+      <input type="radio" name="tsexo" id="cMasc"/><label for="cMasc">Masculino</label><br/>
+      <input type="radio" name="tsexo" id="cFem"/><label for="cFem">Femenino</label>
+  </fieldset>
+    <p><label for="cNasc">Data de Nacimento:</label>  
+    <input type="date" name="tNasc" id="cNasc"/></p>
+    <fieldset id="endereco"><legend> Endereço do Usuário</legend>
+    <p><label for="cRua">Logradouro:</label>  
+    <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua AV Trav"/></p>
+    <p><label for="cNum">Numero:</label> 
+    <input type="number" name="tNum" id="cNum" min="0" max="99999" placeholder="Ex: 1234"/></p>
+    <p><label for="cEst">Estado:</label>  
+    <input type="text" name="tEst" id="cEst" size="20" maxlength="30" placeholder="Estado"></p>
+    <p><label for="cCid">Cidade:</label> 
+    <input type="text" name="tCid" id="cCid" size="20" maxlength="30" placeholder="Cidade"></p>
+    </fieldset>
+  <fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+      <p><label for="cUrg">Grau de Urgência:</label> Min<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2">Max</p>
+      <p><label for="cMsg">Mensagem:</label> <textarea name="tMsg" id="cMsg" cols="30" rows="10" placeholder="Deixe sua Mensagem Aqui"></textarea> </p>
+  </fieldset>
+    <input type="submit" value="ENVIAR"/>
+  </fieldset>  
+    
+</form>
+    <footer id="rodape">
+      oziel trevisan <br/><a href="https://www.facebook.com/oziel.trevisan" target="_blank">Fecebook</a>
+
+    </footer>
+    </div> 
+    
+</body>
+
+</html>

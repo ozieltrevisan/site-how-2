@@ -1,0 +1,40 @@
+@charset "UTF8";
+
+form{
+    width: 600px;
+    margin: auto;
+    background-color: rgb(240, 231, 222,.8);
+    
+}
+input{
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 13pt;
+    color: darkgray;
+
+}
+input:hover{
+    background-color: #bbb8b8;
+
+
+}
+legend{
+    color: rgb(8, 8, 8);
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: sans-serif;
+}
+fieldset {
+    border-color: #606060;
+    margin: 20px;
+}
+fieldset#sexo{
+    width: 150px;
+
+}
+label{
+    color: rgb(8,8,8);
+    font-size: 10pt;
+    font-family: sans-serif;
+    font-weight: bold;
+}
